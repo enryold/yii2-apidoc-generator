@@ -1,5 +1,5 @@
 {
-    "name": "yiisoft/yii2-apidoc-generator",
+    "name": "eold/yii2-apidoc-generator",
     "type": "yii2-extension",
     "description": "A simple comments generator in Apidoc.js format for your yii2 RESTFul API's",
     "keywords": ["yii2", "apidoc", "apidoc.js", "generator"],
