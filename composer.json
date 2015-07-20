@@ -1,0 +1,21 @@
+{
+    "name": "yiisoft/yii2-apidoc-generator",
+    "type": "yii2-extension",
+    "description": "A simple comments generator in Apidoc.js format for your yii2 RESTFul API's",
+    "keywords": ["yii2", "apidoc", "apidoc.js", "generator"],
+    "minimum-stability": "stable",
+    "license": "BSD",
+    "support": {
+        "issues": "https://github.com/enryold/yii2-apidoc-generator"
+    },
+    "authors": [
+        {
+            "name": "Enrico Vecchio",
+            "email": "enrico.vecchio1@gmail.com"
+        }
+    ],
+
+    "require": {
+        "yiisoft/yii2": "*"
+    }
+}
