@@ -7,6 +7,7 @@
  */
 
 
+namespace eold\apidocgen\src;
 
 
 use yii\base\ActionEvent;

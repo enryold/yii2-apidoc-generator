@@ -16,5 +16,9 @@
 
     "require-dev": {
         "yiisoft/yii2": "*"
+    },
+
+    "autoload": {
+        "psr-4": { "eold\\apidocgen\\": "" }
     }
 }
