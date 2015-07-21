@@ -8,5 +8,6 @@ $baseDir = dirname($vendorDir);
 return array(
     'yii\\composer\\' => array($vendorDir . '/yiisoft/yii2-composer'),
     'yii\\' => array($vendorDir . '/yiisoft/yii2'),
+    'eold\\apidocgen\\' => array($baseDir . '/'),
     'cebe\\markdown\\' => array($vendorDir . '/cebe/markdown'),
 );
