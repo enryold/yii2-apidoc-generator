@@ -15,7 +15,7 @@ npm install apidoc -g
 ```
 
 
-INSTALL APIDOC GENERATOR WITH COMPOSER
+ADD APIDOC GENERATOR IN YOUR PROJECT
 ---------------------------------------
 
 ```
