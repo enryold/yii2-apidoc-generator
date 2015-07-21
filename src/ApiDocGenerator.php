@@ -14,7 +14,7 @@ use yii\base\ActionEvent;
 use yii\base\Application;
 use yii\base\Component;
 use yii\base\Controller;
-
+use Yii;
 
 
 
@@ -337,8 +337,12 @@ class ApiDocGenerator extends Component {
      */
     private function loadGeneratedDocs()
     {
+        $dataDir = Yii::getAlias($this->docDataAlias);
 
-        $d = dir(Yii::getAlias($this->docDataAlias));
+
+        if (!file_exists($dataDir)) { mkdir($dataDir, 0777, true); }
+
+        $d = dir($dataDir);
         while($file = $d->read()) { // do this for each file in the directory
             if ($file != "." && $file != "..") { // to prevent an infinite loop
                 $this->docs[$file] = true;
