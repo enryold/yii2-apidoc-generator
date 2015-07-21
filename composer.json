@@ -14,6 +14,13 @@
         }
     ],
 
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/enryold/yii2-apidoc-generator"
+        }
+    ],
+
     "require-dev": {
         "yiisoft/yii2": "*"
     },

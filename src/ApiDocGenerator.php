@@ -292,7 +292,7 @@ class ApiDocGenerator extends Component {
     {
         $url = Yii::$app->request->getUrl();
         $qMarkPos = strpos($url, '?');
-        return substr($url, 0, $qMarkPos);
+        return ($qMarkPos !== false) ? substr($url, 0, $qMarkPos) : $url;
     }
 
 
