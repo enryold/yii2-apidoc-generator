@@ -367,9 +367,14 @@ class ApiDocGenerator extends Component {
     {
         if(isset($this->docs[$this->friendlyName])) return;
 
+	    $controllerNames = explode("/", Yii::$app->request->getPathInfo());
+	    array_shift($controllerNames);
+	    $controllerName = implode("/", $controllerNames);
+
+        $path = Yii::getAlias($this->docDataAlias) . DIRECTORY_SEPARATOR . $controllerName;
+	    @mkdir($path);
 
         $path = Yii::getAlias($this->docDataAlias) . DIRECTORY_SEPARATOR . $this->friendlyName;
-
         $doc = fopen($path, "w") or die("Unable to open file!");
 
         fwrite($doc, "<?php"."\n");
